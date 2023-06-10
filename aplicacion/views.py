@@ -2,6 +2,8 @@ from datetime import datetime as dt
 from django.http import HttpResponse
 from django.template import Context, Template
 from django.template import loader
+from django.shortcuts import render
+from aplicacion.models import notebook
 
 def saludo(request):
     return HttpResponse("Adriel")
@@ -17,12 +19,21 @@ def dia(request):
 def nombre(request, nombre):
     nombre = f"Mi nombre es: <br><br> {nombre}"
     return HttpResponse(nombre)
-   
+
+
 def template(request):
     #miHtml = open("./Proyecto1/planillas/index.html")
 
     listaDeNotas =[2,2,5,3,7,8,4,2,7,5,9]
     diccionario = {"nombre": "Adriel", "apellido": "viola", "notas": listaDeNotas}
-    plantilla =loader.get_template('base.html')
-    docu = plantilla.render(diccionario)
-    return HttpResponse(docu)
+    #plantilla =loader.get_template()
+    #docu = plantilla.render(diccionario)
+    #return HttpResponse(diccionario)
+
+    return render(request, "aplicacion/base.html")
+
+def notebook(request, marca, modelo):
+    computadora = notebook(marca=marca, modelo=int(modelo))
+    computadora.save()
+    documento = f"notebook: {notebook.marca}<br>modelo: {notebook.modelo}"
+
