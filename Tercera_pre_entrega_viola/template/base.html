@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    LALA super facil
+    Excelente!!!!....Es muy facin de usar planillas.
+    
+    <p style="color: green"> Mi nombre es {{nombre}},</p> <p style= "color: red"> Y mi apellido {{apellido}}</p>
+    <H1>Este template fue generado  {{hoy}}</H1>
+    <h3>Estas son mis notas universitarias: </h3>
+    <p> {% for n in notas%} 
+                {% if n < 4%}
+                    <p style="color: red"> Nota mala {{n}}</p>
+                {%else%} <p style="color: green"> Nota buena {{n}}</p>
+                {%endif%} 
+        {%endfor%}              
+    </p>
+</body>
+</html>
