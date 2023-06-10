@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.template import Context, Template
 from django.template import loader
 
-def saludo(request, saludo):
+def saludo(request):
     return HttpResponse("Adriel")
 
 def segundo(request):
@@ -17,8 +17,7 @@ def dia(request):
 def nombre(request, nombre):
     nombre = f"Mi nombre es: <br><br> {nombre}"
     return HttpResponse(nombre)
-    
-
+   
 def template(request):
     #miHtml = open("./Proyecto1/planillas/index.html")
 

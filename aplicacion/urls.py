@@ -1,13 +1,13 @@
 from django.urls import path
-from .views import saludo,segundo,dia, nombre,template
-
+from .views import saludo, dia, segundo, nombre, template
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+
     path('saludo/', saludo),
     path('dia/', dia),
     path('segundo/', segundo),
-    path('nombre/', nombre),
-    path('template/', template)
+    path('nombre/<nombre>', nombre),
+    path('template/', template),
+    
 ]
 
