@@ -9,7 +9,7 @@ class notebook(models.Model):
     apellido= models.CharField(max_length=30)
     emai=models.EmailField()
 
-class Desktop(models.Model):
+class desktop(models.Model):
     marca = models.CharField(max_length=20)
     modelo = models.CharField(max_length=20)
     serie = models.CharField(max_length=50)
