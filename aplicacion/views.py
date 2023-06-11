@@ -30,7 +30,7 @@ def template(request):
     #docu = plantilla.render(diccionario)
     #return HttpResponse(diccionario)
 
-    return render(request, "aplicacion/base.html")
+    return render(request, "aplicacion/index.html")
 
 def notebook(request, marca, modelo):
     computadora = notebook(marca=marca, modelo=int(modelo))
