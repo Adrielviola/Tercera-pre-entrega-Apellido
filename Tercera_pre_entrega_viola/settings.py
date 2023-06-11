@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Tercera_pre_entrega_viola.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["./aplicacion/template/"],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
