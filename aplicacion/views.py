@@ -15,3 +15,5 @@ def desktop(request):
 def celulares(request):
     return render(request, "aplicacion/celulares.html")
 
+def login(request):
+    return render(request, "aplicacion/login.html")
