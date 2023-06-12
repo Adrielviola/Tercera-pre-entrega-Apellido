@@ -17,3 +17,6 @@ def celulares(request):
 
 def login(request):
     return render(request, "aplicacion/login.html")
+
+def inventarioFormulario(request):
+    return render(request, "aplicacion/inventarioFormulario.html")
