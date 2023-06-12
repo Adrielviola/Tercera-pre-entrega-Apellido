@@ -1,5 +1,23 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
+     <!-- Content section 1-->
+     <section id="scroll" style="background-image: url('/static/pantalla_notebook/assets/img/fondo_notebook.jpg');background-size: cover;">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><img class="img-fluid rounded-circle" src='{% static "pantalla_notebook/assets/img/portfolio/fullsize/fondo_notebook1.jpg" %}' alt="..." /></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <!-- para cambiar de color se utiliza style y para las negritas <strong><strong> -->
+                        <h2 class="display-4"> <strong> <p style="color: rgb(1, 58, 133);" >Bienvenido a la pagina de inventario </p> <strong></h2>
+                        <p style="color: rgb(81, 7, 165);">esta pagina vas a poder llevar un orden de todos los activos de tu stock</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -7,9 +25,9 @@
         <meta name="author" content="" />
         <title>The Big Picture - Start Bootstrap Template</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href='{% static "aplicacion/assets/favicon.ico" %}' />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href='{% static "pantalla_notebook/css/styles.css" %}'rel="stylesheet" />
     </head>
     <body>
         <!-- Navigation-->
