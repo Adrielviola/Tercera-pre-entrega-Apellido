@@ -37,9 +37,11 @@ urls: 172.0.0.1:8000/admin/
 http://127.0.0.1:8000/aplicacion/
 http://127.0.0.1:8000/aplicacion/formulario/
 
-USUARIO LOCAL(Permisos de vista): usuario_local1234 administrador 
-USUARIO LOCAL(Permisos para agregar informacion): belen administrador
-USUARIO ADMINISTRADOR: adriel administrador
+USUARIO LOCAL(Permisos de vista):  user:usuario_local1234   pass:administrador 
+
+USUARIO LOCAL(Permisos para agregar informacion): user:belen  pass:administrador
+
+USUARIO ADMINISTRADOR: usuario:adrielviola  pass:administrador
 
 
 PD:No se logra finalizar la el formulario para buscar algo en la BD, ya que me arroja un error, el cual no logro encontrarle la solucion. Se adjuntan capturas en la entrega
