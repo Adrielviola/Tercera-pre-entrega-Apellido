@@ -1,16 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inventarioFormulario</title>
+</head>
+<body>
+    
 {% extends 'generales/base.html' %}
-
 {% load static %}
-
 {% block title %} Inicio {% endblock title %}
-
 {% block main %}
-    <form action="" method="POST">
-        {% csrf_token %}
-        <p> usuario: <input type = "text" name="curso">
-        <p> nombre: <input type = "text" name="camada">
-        <input type = "submit" value="Enviar">
-        </form>  
-            
-            
+<form action="" method="POST">
+    {% csrf_token %}
+    <p> notebook: <input type = "text" name="notebook"></p>
+    <p> serie: <input type = "text" name="serie"></p>
+    <input type = "submit" value="Enviar">
+    </form>  
 {% endblock main %}
+
+</body>
+</html>
+

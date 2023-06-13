@@ -32,7 +32,7 @@ class Migration(migrations.Migration):
                 ('serie', models.CharField(max_length=50)),
                 ('nombre', models.CharField(max_length=30)),
                 ('apellido', models.CharField(max_length=30)),
-                ('imai', models.DecimalField(decimal_places=0, max_digits=20)),
+                ('imei', models.DecimalField(decimal_places=0, max_digits=20)),
             ],
         ),
         migrations.CreateModel(

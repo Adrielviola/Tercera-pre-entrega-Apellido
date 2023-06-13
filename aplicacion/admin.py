@@ -1,6 +1,12 @@
 from django.contrib import admin
-from .models import notebook, aio, desktop, celulares
+from .models import notebook, aio, desktop, celulares, usuario
 
+@admin.register(usuario)
+class usuarioAdmin(admin.ModelAdmin):
+    list_display = ['nombre', 'apellido','email']
+    search_fields = ('nombre', 'apellido','email',)
+    ordering =  ('nombre', 'apellido','email',)
+    List_editable = ['nombre', 'apellido','email']   
 
 @admin.register(aio)
 class aioAdmin(admin.ModelAdmin):

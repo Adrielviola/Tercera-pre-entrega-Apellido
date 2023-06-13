@@ -4,7 +4,7 @@ from aplicacion import views
 
 urlpatterns=[
 
-
+    
     path('', views.inicio, name="Inicio"),
     path('notebook/', views.notebook, name="notebook"),
     path('aio/', views.aio, name="aio"),
@@ -12,6 +12,5 @@ urlpatterns=[
     path('celulares', views.celulares, name="celulares"),
     path('login', views.login, name="login"),
     path('formulario', views.inventarioFormulario, name="inventarioFormulario")
-   
     ]
 

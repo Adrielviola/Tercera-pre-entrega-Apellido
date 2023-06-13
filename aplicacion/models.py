@@ -8,7 +8,6 @@ class usuario(models.Model):
     apellido = models.CharField(max_length=40)
     email = models.CharField(max_length=40)
 
-
 class notebook(models.Model):
    # usuario_id = models.ForeignKey(usuario)
     marca = models.CharField(max_length=20)
