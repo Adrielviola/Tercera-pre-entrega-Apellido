@@ -1,0 +1,31 @@
+Not Found: /
+[12/Jun/2023 22:47:04] "GET / HTTP/1.1" 404 2189
+[12/Jun/2023 22:47:06] "GET /aplicacion/formulario HTTP/1.1" 200 3831
+[12/Jun/2023 22:47:06] "GET /static/aplicacion/css/styles.css HTTP/1.1" 304 0
+
+
+<QueryDict: {'csrfmiddlewaretoken': ['Fvhe3OT02xv661RbpJfNTB8ETpCw5TBIxYBB3N0dK4YjSa6vgteQU3OUg8Cvp8Rg'], 'notebook': ['HP'], 'serie': ['sereds']}>
+
+Internal Server Error: /aplicacion/formulario
+Traceback (most recent call last):
+  File "C:\Users\A\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'NOTEBOOK'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\A\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response        
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A\Desktop\Nueva carpeta\entregable\aplicacion\views.py", line 24, in inventarioFormulario
+    NOTEBOOK = notebook(NOTEBOOK = request.POST['NOTEBOOK'], serie = request.POST['serie'])
+                                   ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\A\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'NOTEBOOK'
+[12/Jun/2023 22:47:15] "POST /aplicacion/formulario HTTP/1.1" 500 73744
